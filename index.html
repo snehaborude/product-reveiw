@@ -42,12 +42,18 @@
 <body>
  <img src="img/img-1.jpg"    id="main-product-image" />
  <div class="product-images-container">
-    <img src="img/img-1.jpg"   class="product-image"/>
-    <img src="img/img-2.jpg"   class="product-image"/>
-    <img src="img/img-3.jpg"   class="product-image"/>
-    <img src="img/img-4.jpg"   class="product-image"/>
-    <img src="img/img-5.jpg"   class="product-image"/>
+    <img src="img/img-1.jpg"   class="product-image"  onclick="changeImage('img/img-1.jpg')"/>
+    <img src="img/img-2.jpg"   class="product-image" onclick="changeImage('img/img-2.jpg')"/>
+    <img src="img/img-3.jpg"   class="product-image" onclick="changeImage('img/img-3.jpg')"/>
+    <img src="img/img-4.jpg"   class="product-image" onclick="changeImage('img/img-4.jpg')"/>
+    <img src="img/img-5.jpg"   class="product-image" onclick="changeImage('img/img-5.jpg')"/>
 
  </div>
+ <script>
+    function changeImage(imageName){
+const mainImage=document.getElementById("main-product-image");
+mainImage.src=imageName;
+    }
+ </script>
 </body>
 </html>
